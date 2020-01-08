@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://www.wfmc.org/2008/XPDL2.1" xmlns:deprecated="http://www.wfmc.org/2002/XPDL1.0" xmlns:ibpm="http://fujitsu.com/ibpm1" xmlns:xpdl="http://www.wfmc.org/2008/XPDL2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="176" Name="TestJson" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/docs/bpmnxpdl_31.xsd">
+    <PackageHeader>
+        <XPDLVersion>2.1</XPDLVersion>
+        <Vendor>Fujitsu</Vendor>
+        <Created>Mon Nov 19 13:17:20 IST 2018</Created>
+    </PackageHeader>
+    <RedefinableHeader PublicationStatus="UNDER_TEST"/>
+    <Script Type="text/javascript"/>
+    <Participants>
+        <Participant Id="admin" Name="admin">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="AdminRole" Name="AdminRole">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Id="1"/>
+    </Pages>
+    <Pools>
+        <Pool BoundaryVisible="false" Id="Pool1" Name="" Orientation="HORIZONTAL" Process="176">
+            <Lanes/>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo Height="109.0" PageId="1" ToolId="InterstageBusinessProcessManager" Width="678.0">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <Associations/>
+    <Artifacts/>
+    <WorkflowProcesses>
+        <WorkflowProcess AccessLevel="PUBLIC" Id="176" Name="TestJson">
+            <ProcessHeader DurationUnit="s">
+                <Priority>8</Priority>
+            </ProcessHeader>
+            <RedefinableHeader PublicationStatus="UNDER_TEST">
+                <Author>admin</Author>
+                <Version>14.0</Version>
+                <Responsibles>
+                    <Responsible>admin</Responsible>
+                </Responsibles>
+            </RedefinableHeader>
+            <DataFields>
+                <DataField Id="UserJsonObj" IsArray="false" Name="UserJsonObj">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                    <InitialValue>{}</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="STRING"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="UserJsonArray" IsArray="false" Name="UserJsonArray">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                    <InitialValue>[]</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="STRING"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="UserArray" IsArray="false" Name="UserArray">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                    <InitialValue>{}</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="STRING"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable1" IsArray="false" Name="Variable1">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                    <InitialValue>test</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="STRING"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable2" IsArray="false" Name="Variable2">
+                    <DataType>
+                        <BasicType Type="FLOAT"/>
+                    </DataType>
+                    <InitialValue>0.00</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="BIGDECIMAL"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable3" IsArray="false" Name="Variable3">
+                    <DataType>
+                        <BasicType Type="BOOLEAN"/>
+                    </DataType>
+                    <InitialValue>false</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="BOOLEAN"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable4" IsArray="false" Name="Variable4">
+                    <DataType>
+                        <BasicType Type="DATETIME"/>
+                    </DataType>
+                    <InitialValue>1542615211000</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="DATE"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable5" IsArray="false" Name="Variable5">
+                    <DataType>
+                        <BasicType Type="FLOAT"/>
+                    </DataType>
+                    <InitialValue>0.0</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="FLOAT"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable6" IsArray="false" Name="Variable6">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                    <InitialValue>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;Body/&gt;&#13;
+</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Schema="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;/&gt;&#13;&#10;" Type="XML"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable7" IsArray="false" Name="Variable7">
+                    <DataType>
+                        <BasicType Type="INTEGER"/>
+                    </DataType>
+                    <InitialValue>0</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="INTEGER"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable8" IsArray="false" Name="Variable8">
+                    <DataType>
+                        <BasicType Type="INTEGER"/>
+                    </DataType>
+                    <InitialValue>0</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="LONG"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable9" IsArray="false" Name="Variable9">
+                    <DataType>
+                        <BasicType Type="INTEGER"/>
+                    </DataType>
+                    <InitialValue>33330</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="INTEGER"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+                <DataField Id="Variable10" IsArray="false" Name="Variable10">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                    <InitialValue>myData</InitialValue>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="IflowDataType">
+                            <ibpm:IflowDataType Type="STRING"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                </DataField>
+            </DataFields>
+            <ActivitySets/>
+            <Activities>
+                <Activity Id="194" Name="Start">
+                    <Event>
+                        <StartEvent Trigger="None"/>
+                    </Event>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="197"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="NodeType" Value="0"/>
+                        <ExtendedAttribute Name="Associations">
+                            <ibpm:Associations/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Artifacts">
+                            <ibpm:Artifacts/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Coordinates">
+                            <ibpm:Coordinates xpos="81" ypos="80"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="60.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="60.0">
+                            <Coordinates XCoordinate="50.0" YCoordinate="50.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="195" Name="TestMe">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>AdminRole</Performer>
+                    <Performers>
+                        <Performer>AdminRole</Performer>
+                    </Performers>
+                    <Priority>-1</Priority>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="198"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="NodeType" Value="2"/>
+                        <ExtendedAttribute Name="ExpandGroups" Value="true"/>
+                        <ExtendedAttribute Name="EnableFutureWorkItems" Value="false"/>
+                        <ExtendedAttribute Name="RecallDisabled" Value="false"/>
+                        <ExtendedAttribute Name="Simulation">
+                            <ibpm:Simulation>
+                                <Duration>3600000</Duration>
+                                <Resources/>
+                                <Connectors>
+                                    <Connector Name="Arrow3" Probability="100.0"/>
+                                </Connectors>
+                            </ibpm:Simulation>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Associations">
+                            <ibpm:Associations/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Artifacts">
+                            <ibpm:Artifacts/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Coordinates">
+                            <ibpm:Coordinates xpos="368" ypos="100"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="68.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="102.0">
+                            <Coordinates XCoordinate="315.0" YCoordinate="66.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="196" Name="End1">
+                    <Event>
+                        <EndEvent/>
+                    </Event>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="NodeType" Value="1"/>
+                        <ExtendedAttribute Name="Associations">
+                            <ibpm:Associations/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Artifacts">
+                            <ibpm:Artifacts/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="Coordinates">
+                            <ibpm:Coordinates xpos="678" ypos="109"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="66.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="66.0">
+                            <Coordinates XCoordinate="647.0" YCoordinate="79.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="IntermediateEvent1" Name="TestMe_Arrow3">
+                    <Event>
+                        <IntermediateEvent Implementation="Other" Target="195" Trigger="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="light blue" Height="18.0" IsVisible="true" PageId="1" ToolId="InterstageBusinessProcessManager" Width="18.0">
+                            <Coordinates XCoordinate="408.0" YCoordinate="91.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="194" Id="197" Name="Arrow2" To="195">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="StartPoint">
+                            <ibpm:StartPoint xpos="116" ypos="83"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="EndPoint">
+                            <ibpm:EndPoint xpos="315" ypos="100"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="ViewerScript">
+                            <ibpm:ViewerScript Value="214,83,214,100"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo FillColor="light blue" IsVisible="true" PageId="1">
+                            <Coordinates XCoordinate="116.0" YCoordinate="83.0"/>
+                            <Coordinates XCoordinate="214.0" YCoordinate="83.0"/>
+                            <Coordinates XCoordinate="214.0" YCoordinate="100.0"/>
+                            <Coordinates XCoordinate="315.0" YCoordinate="100.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="195" Id="198" Name="Arrow3" To="196">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="StartPoint">
+                            <ibpm:StartPoint xpos="417" ypos="100"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="EndPoint">
+                            <ibpm:EndPoint xpos="647" ypos="112"/>
+                        </ExtendedAttribute>
+                        <ExtendedAttribute Name="ViewerScript">
+                            <ibpm:ViewerScript Value="532,100,532,112"/>
+                        </ExtendedAttribute>
+                    </ExtendedAttributes>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo FillColor="light blue" IsVisible="true" PageId="1">
+                            <Coordinates XCoordinate="417.0" YCoordinate="100.0"/>
+                            <Coordinates XCoordinate="532.0" YCoordinate="100.0"/>
+                            <Coordinates XCoordinate="532.0" YCoordinate="112.0"/>
+                            <Coordinates XCoordinate="647.0" YCoordinate="112.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes xmlns:ibpm="http://fujitsu.com/ibpm1">
+                <ExtendedAttribute Name="JSON_OBJECT" Value="UserJsonObj"/>
+                <ExtendedAttribute Name="JSON_ARRAY" Value="UserJsonArray, UserArray"/>
+                <ExtendedAttribute Name="SWIM_LANES">
+                    <ibpm:SWIM_LANES/>
+                </ExtendedAttribute>
+                <ExtendedAttribute Name="Associations">
+                    <ibpm:Associations/>
+                </ExtendedAttribute>
+                <ExtendedAttribute Name="Artifacts">
+                    <ibpm:Artifacts/>
+                </ExtendedAttribute>
+                <ExtendedAttribute Name="SameSubPlanVersion" Value="false"/>
+                <ExtendedAttribute Name="ProcessDefinitionId" Value="176"/>
+                <ExtendedAttribute Name="ProcessTypeId" Value="0"/>
+                <ExtendedAttribute Name="State" Value="0"/>
+                <ExtendedAttribute Name="TemplateIdentifier" Value="System"/>
+                <ExtendedAttribute Name="StartingMultiProcessDisabled" Value="false"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+    <ExtendedAttributes>
+        <ExtendedAttribute Name="Build" Value="11.4 IF1141011"/>
+        <ExtendedAttribute Name="System" Value="INTERSTAGEBPMFlow"/>
+    </ExtendedAttributes>
+</Package>
